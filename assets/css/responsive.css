@@ -97,3 +97,22 @@
 
 
 }
+
+
+@media (max-width: 768px) {
+  .max-w-7xl .container {
+    flex-direction: column;
+  }
+
+  .max-w-7xl form {
+    padding: 2rem 1.5rem 2rem 1.5rem;
+  }
+
+  .max-w-7xl .form-row {
+    flex-direction: column;
+  }
+
+  .max-w-7xl .info-side {
+    border-radius: 1rem 1rem 0 0;
+  }
+}
