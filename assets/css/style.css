@@ -28133,13 +28133,17 @@ button.mfp-arrow:active {
   margin-right: -5px;
 }
 
-.post-style-3>[class*="col-"] {
+.post-style-3>[class*="col-"],
+.row-padding .row>[class*="col-"] {
   padding-left: 5px;
   padding-right: 5px;
   margin-bottom: 10px;
   /* row gap */
 }
 
+.row-padding .row .form-group{
+  margin-bottom: 0 !important;
+}
 .pagination.pagination-style-01 .page-link.current {
   color: #fff;
   background: #f5a220;
@@ -28161,4 +28165,12 @@ button.mfp-arrow:active {
     text-align: center;
     width: 40px;
     margin-right: 4px;
+}
+
+.decoration-none{
+  text-decoration: none;
+}
+
+.sticky-top {
+  z-index: 1020; /* Bootstrap’s default */
 }
