@@ -1049,5 +1049,340 @@
 
         <!-- Site Javascript -->
         <script src="assets/js/app.js"></script>
+
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId">
+          Launch
+        </button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true" style="z-index: 99999;">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    
+                    <div class="modal-header">
+                        <div class="row justify-content-between">
+                            <div class="col-lg-10 col-sm-10 col-8">
+                                <div class="row">
+                                    <div class="col-lg-3 col-sm-3 col-3">
+                                        <div class="image">
+                                            <img loading="eager" src="https://searchyourcollege.com/assets/images/modal_images/brochure.png" alt="top-college-universities-in-india-and-abroad" class="img-responsive img-thumbnail " width="100">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-9 col-sm-9 col-9">
+                                        <div class="text">
+                                            <h6 id="uni_name">Register Now To Apply</h6>
+                                            <p class="mb-0" id="uni_add">Get details and latest updates</p>
+                                            <input type="hidden" id="uniId" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-sm-2 col-2">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="advertisement-section mb-3">
+                                    <a href="#">
+                                        <img loading="eager" src="https://dummyimage.com/1920x300/ccc/fff" alt="top-college-universities-in-india-and-abroad" class="w-100">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-item  mb-2">
+                                    <input autocomplete="off" name="name" id="nameInput" class="form-input form-control" type="text" placeholder=" Full Name *" required="">
+                                </div>
+                            </div>
+                        
+                            <div class="col-lg-6">
+                                <div class="form-item  mb-2">
+                                    <input autocomplete="off" name="email" id="emailInput" class="form-input form-control" type="Email Address *" placeholder=" Email Address *" required="">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-2"> 
+                                <div class="form-item mb-2">
+                                    <select id="city" class="form-select form-control">
+                                        <option value="" selected disabled>Select Country</option>
+                                        <option value="93">AFGHANISTAN
+                                        <option value="355">ALBANIA
+                                        <option value="213">ALGERIA
+                                        <option value="1684">AMERICAN SAMOA
+                                        <option value="376">ANDORRA
+                                        <option value="244">ANGOLA
+                                        <option value="1264">ANGUILLA
+                                        <option value="0">ANTARCTICA
+                                        <option value="1268">ANTIGUA AND BARBUDA
+                                        <option value="54">ARGENTINA
+                                        <option value="374">ARMENIA
+                                        <option value="297">ARUBA
+                                        <option value="61">AUSTRALIA
+                                        <option value="43">AUSTRIA
+                                        <option value="994">AZERBAIJAN
+                                        <option value="1242">BAHAMAS
+                                        <option value="973">BAHRAIN
+                                        <option value="880">BANGLADESH
+                                        <option value="1246">BARBADOS
+                                        <option value="375">BELARUS
+                                        <option value="32">BELGIUM
+                                        <option value="501">BELIZE
+                                        <option value="229">BENIN
+                                        <option value="1441">BERMUDA
+                                        <option value="975">BHUTAN
+                                        <option value="591">BOLIVIA
+                                        <option value="387">BOSNIA AND HERZEGOVINA
+                                        <option value="267">BOTSWANA
+                                        <option value="0">BOUVET ISLAND
+                                        <option value="55">BRAZIL
+                                        <option value="246">BRITISH INDIAN OCEAN TERRITORY
+                                        <option value="673">BRUNEI DARUSSALAM
+                                        <option value="359">BULGARIA
+                                        <option value="226">BURKINA FASO
+                                        <option value="257">BURUNDI
+                                        <option value="855">CAMBODIA
+                                        <option value="237">CAMEROON
+                                        <option value="1">CANADA
+                                        <option value="238">CAPE VERDE
+                                        <option value="1345">CAYMAN ISLANDS
+                                        <option value="236">CENTRAL AFRICAN REPUBLIC
+                                        <option value="235">CHAD
+                                        <option value="56">CHILE
+                                        <option value="86">CHINA
+                                        <option value="61">CHRISTMAS ISLAND
+                                        <option value="672">COCOS (KEELING) ISLANDS
+                                        <option value="57">COLOMBIA
+                                        <option value="269">COMOROS
+                                        <option value="242">CONGO
+                                        <option value="242">CONGO, THE DEMOCRATIC REPUBLIC OF THE
+                                        <option value="682">COOK ISLANDS
+                                        <option value="506">COSTA RICA
+                                        <option value="225">COTE D'IVOIRE
+                                        <option value="385">CROATIA
+                                        <option value="53">CUBA
+                                        <option value="357">CYPRUS
+                                        <option value="420">CZECH REPUBLIC
+                                        <option value="45">DENMARK
+                                        <option value="253">DJIBOUTI
+                                        <option value="1767">DOMINICA
+                                        <option value="1809">DOMINICAN REPUBLIC
+                                        <option value="593">ECUADOR
+                                        <option value="20">EGYPT
+                                        <option value="503">EL SALVADOR
+                                        <option value="240">EQUATORIAL GUINEA
+                                        <option value="291">ERITREA
+                                        <option value="372">ESTONIA
+                                        <option value="251">ETHIOPIA
+                                        <option value="500">FALKLAND ISLANDS (MALVINAS)
+                                        <option value="298">FAROE ISLANDS
+                                        <option value="679">FIJI
+                                        <option value="358">FINLAND
+                                        <option value="33">FRANCE
+                                        <option value="594">FRENCH GUIANA
+                                        <option value="689">FRENCH POLYNESIA
+                                        <option value="0">FRENCH SOUTHERN TERRITORIES
+                                        <option value="241">GABON
+                                        <option value="220">GAMBIA
+                                        <option value="995">GEORGIA
+                                        <option value="49">GERMANY
+                                        <option value="233">GHANA
+                                        <option value="350">GIBRALTAR
+                                        <option value="30">GREECE
+                                        <option value="299">GREENLAND
+                                        <option value="1473">GRENADA
+                                        <option value="590">GUADELOUPE
+                                        <option value="1671">GUAM
+                                        <option value="502">GUATEMALA
+                                        <option value="224">GUINEA
+                                        <option value="245">GUINEA-BISSAU
+                                        <option value="592">GUYANA
+                                        <option value="509">HAITI
+                                        <option value="0">HEARD ISLAND AND MCDONALD ISLANDS
+                                        <option value="39">HOLY SEE (VATICAN CITY STATE)
+                                        <option value="504">HONDURAS
+                                        <option value="852">HONG KONG
+                                        <option value="36">HUNGARY
+                                        <option value="354">ICELAND
+                                        <option selected="" value="91">INDIA
+                                        <option value="62">INDONESIA
+                                        <option value="98">IRAN, ISLAMIC REPUBLIC OF
+                                        <option value="964">IRAQ
+                                        <option value="353">IRELAND
+                                        <option value="972">ISRAEL
+                                        <option value="39">ITALY
+                                        <option value="1876">JAMAICA
+                                        <option value="81">JAPAN
+                                        <option value="962">JORDAN
+                                        <option value="7">KAZAKHSTAN
+                                        <option value="254">KENYA
+                                        <option value="686">KIRIBATI
+                                        <option value="850">KOREA, DEMOCRATIC PEOPLE'S REPUBLIC OF
+                                        <option value="82">KOREA, REPUBLIC OF
+                                        <option value="965">KUWAIT
+                                        <option value="996">KYRGYZSTAN
+                                        <option value="856">LAO PEOPLE'S DEMOCRATIC REPUBLIC
+                                        <option value="371">LATVIA
+                                        <option value="961">LEBANON
+                                        <option value="266">LESOTHO
+                                        <option value="231">LIBERIA
+                                        <option value="218">LIBYAN ARAB JAMAHIRIYA
+                                        <option value="423">LIECHTENSTEIN
+                                        <option value="370">LITHUANIA
+                                        <option value="352">LUXEMBOURG
+                                        <option value="853">MACAO
+                                        <option value="389">MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF
+                                        <option value="261">MADAGASCAR
+                                        <option value="265">MALAWI
+                                        <option value="60">MALAYSIA
+                                        <option value="960">MALDIVES
+                                        <option value="223">MALI
+                                        <option value="356">MALTA
+                                        <option value="692">MARSHALL ISLANDS
+                                        <option value="596">MARTINIQUE
+                                        <option value="222">MAURITANIA
+                                        <option value="230">MAURITIUS
+                                        <option value="269">MAYOTTE
+                                        <option value="52">MEXICO
+                                        <option value="691">MICRONESIA, FEDERATED STATES OF
+                                        <option value="373">MOLDOVA, REPUBLIC OF
+                                        <option value="377">MONACO
+                                        <option value="976">MONGOLIA
+                                        <option value="1664">MONTSERRAT
+                                        <option value="212">MOROCCO
+                                        <option value="258">MOZAMBIQUE
+                                        <option value="95">MYANMAR
+                                        <option value="264">NAMIBIA
+                                        <option value="674">NAURU
+                                        <option value="977">NEPAL
+                                        <option value="31">NETHERLANDS
+                                        <option value="599">NETHERLANDS ANTILLES
+                                        <option value="687">NEW CALEDONIA
+                                        <option value="64">NEW ZEALAND
+                                        <option value="505">NICARAGUA
+                                        <option value="227">NIGER
+                                        <option value="234">NIGERIA
+                                        <option value="683">NIUE
+                                        <option value="672">NORFOLK ISLAND
+                                        <option value="1670">NORTHERN MARIANA ISLANDS
+                                        <option value="47">NORWAY
+                                        <option value="968">OMAN
+                                        <option value="92">PAKISTAN
+                                        <option value="680">PALAU
+                                        <option value="970">PALESTINIAN TERRITORY, OCCUPIED
+                                        <option value="507">PANAMA
+                                        <option value="675">PAPUA NEW GUINEA
+                                        <option value="595">PARAGUAY
+                                        <option value="51">PERU
+                                        <option value="63">PHILIPPINES
+                                        <option value="0">PITCAIRN
+                                        <option value="48">POLAND
+                                        <option value="351">PORTUGAL
+                                        <option value="1787">PUERTO RICO
+                                        <option value="974">QATAR
+                                        <option value="262">REUNION
+                                        <option value="40">ROMANIA
+                                        <option value="70">RUSSIAN FEDERATION
+                                        <option value="250">RWANDA
+                                        <option value="290">SAINT HELENA
+                                        <option value="1869">SAINT KITTS AND NEVIS
+                                        <option value="1758">SAINT LUCIA
+                                        <option value="508">SAINT PIERRE AND MIQUELON
+                                        <option value="1784">SAINT VINCENT AND THE GRENADINES
+                                        <option value="684">SAMOA
+                                        <option value="378">SAN MARINO
+                                        <option value="239">SAO TOME AND PRINCIPE
+                                        <option value="966">SAUDI ARABIA
+                                        <option value="221">SENEGAL
+                                        <option value="381">SERBIA AND MONTENEGRO
+                                        <option value="248">SEYCHELLES
+                                        <option value="232">SIERRA LEONE
+                                        <option value="65">SINGAPORE
+                                        <option value="421">SLOVAKIA
+                                        <option value="386">SLOVENIA
+                                        <option value="677">SOLOMON ISLANDS
+                                        <option value="252">SOMALIA
+                                        <option value="27">SOUTH AFRICA
+                                        <option value="0">SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS
+                                        <option value="34">SPAIN
+                                        <option value="94">SRI LANKA
+                                        <option value="249">SUDAN
+                                        <option value="597">SURINAME
+                                        <option value="47">SVALBARD AND JAN MAYEN
+                                        <option value="268">SWAZILAND
+                                        <option value="46">SWEDEN
+                                        <option value="41">SWITZERLAND
+                                        <option value="963">SYRIAN ARAB REPUBLIC
+                                        <option value="886">TAIWAN, PROVINCE OF CHINA
+                                        <option value="992">TAJIKISTAN
+                                        <option value="255">TANZANIA, UNITED REPUBLIC OF
+                                        <option value="66">THAILAND
+                                        <option value="670">TIMOR-LESTE
+                                        <option value="228">TOGO
+                                        <option value="690">TOKELAU
+                                        <option value="676">TONGA
+                                        <option value="1868">TRINIDAD AND TOBAGO
+                                        <option value="216">TUNISIA
+                                        <option value="90">TURKEY
+                                        <option value="7370">TURKMENISTAN
+                                        <option value="1649">TURKS AND CAICOS ISLANDS
+                                        <option value="688">TUVALU
+                                        <option value="256">UGANDA
+                                        <option value="380">UKRAINE
+                                        <option value="971">UNITED ARAB EMIRATES
+                                        <option value="44">UNITED KINGDOM
+                                        <option value="1">UNITED STATES
+                                        <option value="1">UNITED STATES MINOR OUTLYING ISLANDS
+                                        <option value="598">URUGUAY
+                                        <option value="998">UZBEKISTAN
+                                        <option value="678">VANUATU
+                                        <option value="58">VENEZUELA
+                                        <option value="84">VIET NAM
+                                        <option value="1284">VIRGIN ISLANDS, BRITISH
+                                        <option value="1340">VIRGIN ISLANDS, U.S.
+                                        <option value="681">WALLIS AND FUTUNA
+                                        <option value="212">WESTERN SAHARA
+                                        <option value="967">YEMEN
+                                        <option value="260">ZAMBIA
+                                        <option value="263">ZIMBABWE
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="form-item  mb-2">
+                                    <input autocomplete="off" name="mobile" class="form-input form-control" type="text" id="number" placeholder=" Mobile Number *" required="">
+                                </div>
+                            </div>
+                        
+                            <div class="col-lg-6">
+                                <div class="form-item  mb-2">
+                                    <input autocomplete="off" name="city" id="cityInput" class="form-input form-control" type="text" placeholder=" City You Live In *" required="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text mt-4">
+                            <h6 id="new_user_msg" class="font-size-md mb-3">By submitting this form, you accept and agree to our <a href="#"> Terms of Use</a>.</h6>
+                            <div class="text-button d-flex">
+                                <div class="login">
+                                    <a href="#">Already Registered? Click Here To Login.</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="btn-submit mt-3">
+                            <button type="submit" class="btn btn-primary" >Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
