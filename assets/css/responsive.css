@@ -35,7 +35,7 @@
     }
 
     .icon-box-style-01 {
-        width: 17.4ch;
+        width: 16.89ch;
     }
 
     .home-main-intro-container .list-inline-item {
@@ -133,5 +133,36 @@
 
     .max-w-7xl .info-side {
         border-radius: 1rem 1rem 0 0;
+    }
+
+    .home-main-intro {
+        padding-top: 40px !important;
+    }
+
+    .icon-box-style-01 {
+        padding: 33px 15px;
+        display: flex;
+        width: 15ch;
+        height: 16ch;
+        
+        align-items: center;
+    }
+
+    .icon-box-style-01 img {
+        height: 40px !important;
+        width: 40px !important;
+    }
+
+    .icon-box-style-01 .card-text{
+        font-size: 0.65em !important;
+    }
+    .form-search{
+        padding-bottom: 1.5em !important;
+    }
+
+    .home-main-intro-container .list-inline{
+        overflow: auto;
+        flex-wrap: nowrap !important;
+        display: flex;
     }
 }
