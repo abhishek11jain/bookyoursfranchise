@@ -165,4 +165,61 @@
         flex-wrap: nowrap !important;
         display: flex;
     }
+    #uni_name{
+        font-size: 12px;
+    }
+
+    #uni_add{
+        font-size: 10px;
+    }
+
+    .modal-header .image {
+        height: 40px !important;
+        width: 40px !important; 
+        object-fit: cover;
+        margin-right: 10px;
+    }
+    .modal-header .image img {
+        height: 100% !important;
+        width: 100% !important; 
+    }
+
+    .modal-body .login a{
+        font-size: 12px !important;
+    }
+
+    #new_user_msg{
+        font-size: 10px !important;
+    }
+
+    .post-style-1 a.text-dark.decoration-none{
+        font-size: 16px !important;
+    }
+    .post-style-1 .description-news{
+        font-size: 12px !important;
+    }
+    .post-style-1 .list-inline .list-inline-item{
+        font-size: 10px !important;
+    }
+
+    .other-informations .heading h2,
+     .other-informations .heading h3,
+     .other-informations .heading h6{
+    font-size: 15px;
+    line-height: 25px;
+}   
+
+.form-box .title h4{
+    font-size: 20px !important;
+}
+
+.other-informations .details{
+    font-size: 12px !important;
+    line-height: 25px;
+}
+.other-informations .details h6{
+    font-size: 14px;
+}
+
+
 }

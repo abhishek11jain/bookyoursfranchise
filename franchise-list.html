@@ -75,19 +75,18 @@
                             </div>
                             <nav class="navbar navbar-expand-xl p-2">
                                 <div class="header-mobile d-flex d-xl-none flex-fill justify-content-between align-items-center">
+                                    
+                                    <a class="navbar-brand navbar-brand-mobile" href="#">
+                                        <img src="https://bookyourfranchise.com/assets/images/logo.png" alt="bookyourfranchise" width="220">
+                                    </a>
+
                                     <div class="navbar-toggler toggle-icon" data-toggle="collapse" data-target="#navbar-main-menu">
                                         <span></span>
                                     </div>
-                                    <a class="navbar-brand navbar-brand-mobile" href="#">
-                                        <img src="https://bookyourfranchise.com/demo/assets/images/logo.png" alt="bookyourfranchise" width="220">
-                                    </a>
-                                    <a class="mobile-button-search" href="#" data-gtf-mfp="true" data-mfp-options='{"type":"inline","mainClass":"mfp-move-from-top mfp-align-top search-popup-bg","closeOnBgClick":false,"showCloseBtn":false}'>
-                                        <i class="fa fa-search"></i>
-                                    </a>
                                 </div>
                                 <div class="collapse navbar-collapse" id="navbar-main-menu">
                                     <a class="navbar-brand d-none d-xl-block mr-auto" href="#">
-                                        <img src="https://bookyourfranchise.com/demo/assets/images/logo.png" alt="bookyourfranchise" width="220">
+                                        <img src="https://bookyourfranchise.com/assets/images/logo.png" alt="bookyourfranchise" width="220">
                                     </a>
 
                                     <ul class="navbar-nav">
@@ -98,10 +97,10 @@
                                             <a class="nav-link" href="about.html">About Us</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">Franchise By Industry</a>
+                                            <a class="nav-link" href="franchise-list.html">Franchise By Industry</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">List Your Brand</a> 
+                                            <a class="nav-link" href="brand-registration.html">List Your Brand</a> 
                                         </li>
                                     </ul>
                                     <div class="header-customize justify-content-end align-items-center d-none d-xl-flex ml-5">
@@ -109,8 +108,8 @@
                                             <a href="contact.html" class="link text-uppercase"> <i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp; Contact Us</a>
                                         </div>
                                         <div class="header-customize-item">
-                                        <a href="#" class="btn btn-primary text-capitalize"><i class="fa fa-user" aria-hidden="true"></i>  Login / Register</a>
-                                    </div>
+                                            <a href="#" class="btn btn-primary text-capitalize"><i class="fa fa-user" aria-hidden="true"></i>  Login / Register</a>
+                                        </div>
                                     </div>
                                 </div>
                             </nav>
@@ -143,7 +142,7 @@
 							</div>
 						</div>
 					<!-- Breadcrumb End -->
-                    
+
                     
                     <!-- Blog Section Start -->
                         <div class="pt-8 pb-8 border-bottom list-section">
@@ -152,191 +151,273 @@
                                     <div class="page-content col-lg-12 mb-lg-0">
                                         <div class="row post-style-3">
                                             <div class="col-lg-3 col-sm-4 col-12 mb-4">
-                                                <div class="filter shadow-sm rounded-3 p-3 bg-white">
+                                                <!-- Filter Option Start -->
+                                                    <section class="filter-section d-lg-none d-md-none d-sm-none d-block bg-white border-bottom border-light p-3">
+                                                        <div class="container">
+                                                            <div class="filter-box">
+                                                                <div class="box d-flex justify-content-between text-center align-items-center">
+                                                                    <div class="filter-option">
+                                                                        <a onclick="Openfilter()" class="text-dark p-3">
+                                                                            <i class="fa fa-filter" aria-hidden="true"></i> Filter
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="sorting-option">
+                                                                        <a class="text-dark p-3">
+                                                                            <i class="fa fa-sort" aria-hidden="true"></i> Sorting
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                <!-- Filter Option End -->
+                                                <div class="filter shadow-sm rounded-3 bg-white">
                                                     <div class="header d-flex flex-wrap align-items-center mb-3 border-bottom pb-3">
-                                                        <div class="title flex-grow-1">
-                                                            <h2 class="mb-0 h5 text-dark text-uppercase" style="font-size:1rem;font-weight:600;">Franchise  Filter</h2>
+                                                        <div class="title flex-grow-1 p-3">
+                                                            <h2 class="mb-0 h5 text-dark  filter-title">
+                                                                Franchise Filter
+                                                            </h2>
                                                         </div>
                                                     </div>
 
-                                                    <div class="filter-options">
-                                                        <div class="mb-3">
-                                                            <div class="filter-title mb-2" style="font-size:1rem;font-weight:600;">Type of Franchise</div>
-                                                            <div class="search-box mb-2">
-                                                                <input type="text" class="form-control form-control-sm" placeholder="Find Franchise Type">
+                                                    <div class="accordion" id="filterAccordion">
+
+                                                        <!-- Type of Franchise -->
+                                                        <div class="card mb-2 p-3">
+                                                            <div class="card-header bg-white p-0 border-0 border-bottom-0" id="headingType">
+                                                                <h2 class="mb-0 d-flex justify-content-between w-100 h-auto">
+                                                                    <button class="btn btn-link btn-block text-left px-0" type="button" data-toggle="collapse" data-target="#collapseType" aria-expanded="true" aria-controls="collapseType">  Type of Franchise </button>
+                                                                    <div class="collapse-icon">
+                                                                        <a href="#" data-toggle="collapse" data-target="#collapseType" class="size-6"><i class="fa fa-chevron-down"></i></a>
+                                                                    </div>
+                                                                </h2>
                                                             </div>
-                                                            <div class="checkbox-data mt-2">
-                                                                <div class="form-check mb-1">
-                                                                    <input class="form-check-input" type="checkbox" id="food">
-                                                                    <label class="form-check-label small" for="food">Food & Beverage</label>
-                                                                </div>
-                                                                <div class="form-check mb-1">
-                                                                    <input class="form-check-input" type="checkbox" id="education">
-                                                                    <label class="form-check-label small" for="education">Education</label>
-                                                                </div>
-                                                                <div class="form-check mb-1">
-                                                                    <input class="form-check-input" type="checkbox" id="retail">
-                                                                    <label class="form-check-label small" for="retail">Retail</label>
-                                                                </div>
-                                                                <div class="form-check mb-1">
-                                                                    <input class="form-check-input" type="checkbox" id="health">
-                                                                    <label class="form-check-label small" for="health">Health & Wellness</label>
-                                                                </div>
-                                                                <div class="form-check mb-1">
-                                                                    <input class="form-check-input" type="checkbox" id="services">
-                                                                    <label class="form-check-label small" for="services">Services</label>
+                                                            <div id="collapseType" class="collapse show" aria-labelledby="headingType" data-parent="#filterAccordion">
+                                                                <div class="card-body px-0">
+                                                                    <div class="search-box mb-2">
+                                                                        <input type="text" class="form-control form-control-sm" placeholder="Find Franchise Type">
+                                                                    </div>
+                                                                    <div class="checkbox-data">
+                                                                        <div class="form-check mb-1">
+                                                                            <input class="form-check-input" type="checkbox" id="food">
+                                                                            <label class="form-check-label small" for="food">Food & Beverage</label>
+                                                                        </div>
+                                                                        <div class="form-check mb-1">
+                                                                            <input class="form-check-input" type="checkbox" id="education">
+                                                                            <label class="form-check-label small" for="education">Education</label> 
+                                                                        </div>
+                                                                        <div class="form-check mb-1">
+                                                                            <input class="form-check-input" type="checkbox" id="retail">
+                                                                            <label class="form-check-label small" for="retail">Retail</label>
+                                                                        </div>
+                                                                        <div class="form-check mb-1">
+                                                                            <input class="form-check-input" type="checkbox" id="health">
+                                                                            <label class="form-check-label small" for="health">Health & Wellness</label>
+                                                                        </div>
+                                                                        <div class="form-check mb-1">
+                                                                            <input class="form-check-input" type="checkbox" id="services">
+                                                                            <label class="form-check-label small" for="services">Services</label>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
 
-                                                        <hr>
-
-                                                        <div class="mb-3">
-                                                            <div class="filter-title mb-3" style="font-size:1rem;font-weight:600;">State</div>
-                                                            <div class="search-box mb-2">
-                                                                <input type="text" class="form-control form-control-sm" placeholder="Find State">
+                                                        <!-- State -->
+                                                        <div class="card mb-2 p-3">
+                                                            <div class="card-header bg-white p-0 border-0 border-bottom-0" id="headingState">
+                                                                <h2 class="mb-0 d-flex justify-content-between w-100 h-auto">
+                                                                    <button class="btn btn-link btn-block text-left px-0 collapsed" type="button" data-toggle="collapse" data-target="#collapseState" aria-expanded="false" aria-controls="collapseState"> State </button>
+                                                                    <div class="collapse-icon">
+                                                                        <a href="#" data-toggle="collapse" data-target="#collapseState" class="size-6"><i class="fa fa-chevron-down"></i></a>
+                                                                    </div>
+                                                                </h2>
                                                             </div>
-                                                            <div class="checkbox-data mt-2">
-                                                                <div class="form-check mb-1">
-                                                                    <input class="form-check-input" type="checkbox" id="maharastra">
-                                                                    <label class="form-check-label small" for="maharastra">Maharastra</label>
-                                                                </div>
-                                                                <div class="form-check mb-1">
-                                                                    <input class="form-check-input" type="checkbox" id="tamilnadu">
-                                                                    <label class="form-check-label small" for="tamilnadu">Tamil Nadu</label>
-                                                                </div>
-                                                                <div class="form-check mb-1">
-                                                                    <input class="form-check-input" type="checkbox" id="up">
-                                                                    <label class="form-check-label small" for="up">Uttar Pradesh</label>
-                                                                </div>
-                                                                <div class="form-check mb-1">
-                                                                    <input class="form-check-input" type="checkbox" id="karnataka">
-                                                                    <label class="form-check-label small" for="karnataka">Karnataka</label>
-                                                                </div>
-                                                                <div class="form-check mb-1">
-                                                                    <input class="form-check-input" type="checkbox" id="delhi">
-                                                                    <label class="form-check-label small" for="delhi">Delhi NCR</label>
-                                                                </div>
-                                                                <div class="form-check mb-1">
-                                                                    <input class="form-check-input" type="checkbox" id="kerala">
-                                                                    <label class="form-check-label small" for="kerala">Kerala</label>
-                                                                </div>
-                                                                <div class="form-check mb-1">
-                                                                    <input class="form-check-input" type="checkbox" id="gujarat">
-                                                                    <label class="form-check-label small" for="gujarat">Gujarat</label>
-                                                                </div>
-                                                                <div class="form-check mb-1">
-                                                                    <input class="form-check-input" type="checkbox" id="westbengal">
-                                                                    <label class="form-check-label small" for="westbengal">West Bengal</label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <hr>
-
-                                                        <div class="mb-3">
-                                                            <div class="filter-title mb-3" style="font-size:1rem;font-weight:600;">City</div>
-                                                            <div class="search-box mb-2">
-                                                                <input type="text" class="form-control form-control-sm" placeholder="Find City">
-                                                            </div>
-                                                            <div class="checkbox-data mt-2">
-                                                                <div class="form-check mb-1">
-                                                                    <input class="form-check-input" type="checkbox" id="newdelhi">
-                                                                    <label class="form-check-label small" for="newdelhi">New Delhi</label>
-                                                                </div>
-                                                                <div class="form-check mb-1">
-                                                                    <input class="form-check-input" type="checkbox" id="mumbai">
-                                                                    <label class="form-check-label small" for="mumbai">Mumbai</label>
-                                                                </div>
-                                                                <div class="form-check mb-1">
-                                                                    <input class="form-check-input" type="checkbox" id="chennai">
-                                                                    <label class="form-check-label small" for="chennai">Chennai</label>
-                                                                </div>
-                                                                <div class="form-check mb-1">
-                                                                    <input class="form-check-input" type="checkbox" id="kolkata">
-                                                                    <label class="form-check-label small" for="kolkata">Kolkata</label>
-                                                                </div>
-                                                                <div class="form-check mb-1">
-                                                                    <input class="form-check-input" type="checkbox" id="hyderabad">
-                                                                    <label class="form-check-label small" for="hyderabad">Hyderabad</label>
-                                                                </div>
-                                                                <div class="form-check mb-1">
-                                                                    <input class="form-check-input" type="checkbox" id="bangalore">
-                                                                    <label class="form-check-label small" for="bangalore">Bangalore</label>
-                                                                </div>
-                                                                <div class="form-check mb-1">
-                                                                    <input class="form-check-input" type="checkbox" id="pune">
-                                                                    <label class="form-check-label small" for="pune">Pune</label>
-                                                                </div>
-                                                                <div class="form-check mb-1">
-                                                                    <input class="form-check-input" type="checkbox" id="ahmedabad">
-                                                                    <label class="form-check-label small" for="ahmedabad">Ahmedabad</label>
+                                                            <div id="collapseState" class="collapse show" aria-labelledby="headingState" data-parent="#filterAccordion">
+                                                                <div class="card-body px-0">
+                                                                    <div class="search-box mb-2">
+                                                                        <input type="text" class="form-control form-control-sm" placeholder="Find State">
+                                                                    </div>
+                                                                    <div class="checkbox-data">
+                                                                        <div class="form-check mb-1">
+                                                                            <input class="form-check-input" type="checkbox" id="maharastra">
+                                                                            <label class="form-check-label small" for="maharastra">Maharashtra</label>
+                                                                        </div>
+                                                                        <div class="form-check mb-1">
+                                                                            <input class="form-check-input" type="checkbox" id="tamilnadu">
+                                                                            <label class="form-check-label small" for="tamilnadu">Tamil Nadu</label> 
+                                                                        </div>
+                                                                        <div class="form-check mb-1">
+                                                                            <input class="form-check-input" type="checkbox" id="up">
+                                                                            <label class="form-check-label small" for="up">Uttar Pradesh</label>
+                                                                        </div>
+                                                                        <div class="form-check mb-1">
+                                                                            <input class="form-check-input" type="checkbox" id="karnataka">
+                                                                            <label class="form-check-label small" for="karnataka">Karnataka</label> 
+                                                                        </div>
+                                                                        <div class="form-check mb-1">
+                                                                            <input class="form-check-input" type="checkbox" id="delhi">
+                                                                            <label class="form-check-label small" for="delhi">Delhi NCR</label>
+                                                                        </div>
+                                                                        <div class="form-check mb-1">
+                                                                            <input class="form-check-input" type="checkbox" id="kerala">
+                                                                            <label class="form-check-label small" for="kerala">Kerala</label>
+                                                                        </div>
+                                                                        <div class="form-check mb-1">
+                                                                            <input class="form-check-input" type="checkbox" id="gujarat">
+                                                                            <label class="form-check-label small" for="gujarat">Gujarat</label>
+                                                                        </div>
+                                                                        <div class="form-check mb-1">
+                                                                            <input class="form-check-input" type="checkbox" id="westbengal">
+                                                                            <label class="form-check-label small" for="westbengal">West Bengal</label>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
 
-                                                        <hr>
-
-                                                        <div class="mb-3">
-                                                            <div class="filter-title mb-3" style="font-size:1rem;font-weight:600;">Industry</div>
-                                                            <div class="search-box mb-2">
-                                                                <input type="text" class="form-control form-control-sm" placeholder="Find Industry">
+                                                        <!-- City -->
+                                                        <div class="card mb-2 p-3">
+                                                            <div class="card-header bg-white p-0 border-0 border-bottom-0" id="headingCity">
+                                                                <h2 class="mb-0 d-flex justify-content-between w-100 h-auto">
+                                                                    <button class="btn btn-link btn-block text-left px-0 collapsed" type="button" data-toggle="collapse" data-target="#collapseCity" aria-expanded="false" aria-controls="collapseCity">
+                                                                        City
+                                                                    </button>
+                                                                    <div class="collapse-icon">
+                                                                        <a href="#" data-toggle="collapse" data-target="#collapseCity" class="size-6"><i class="fa fa-chevron-down"></i></a>
+                                                                    </div>
+                                                                </h2>
                                                             </div>
-                                                            <div class="checkbox-data mt-2">
-                                                                <div class="form-check mb-1">
-                                                                    <input class="form-check-input" type="checkbox" id="it">
-                                                                    <label class="form-check-label small" for="it">IT & Tech</label>
+                                                            <div id="collapseCity" class="collapse show" aria-labelledby="headingCity" data-parent="#filterAccordion">
+                                                                <div class="card-body px-0">
+                                                                    <div class="search-box mb-2">
+                                                                        <input type="text" class="form-control form-control-sm" placeholder="Find City">
+                                                                    </div>
+                                                                    <div class="checkbox-data">
+                                                                        <div class="form-check mb-1">
+                                                                            <input class="form-check-input" type="checkbox" id="newdelhi">
+                                                                            <label class="form-check-label small" for="newdelhi">New Delhi</label> 
+                                                                        </div>
+                                                                        <div class="form-check mb-1">
+                                                                            <input class="form-check-input" type="checkbox" id="mumbai">
+                                                                            <label class="form-check-label small" for="mumbai">Mumbai</label>
+                                                                        </div>
+                                                                        <div class="form-check mb-1">
+                                                                            <input class="form-check-input" type="checkbox" id="chennai">
+                                                                            <label class="form-check-label small" for="chennai">Chennai</label>
+                                                                        </div>
+                                                                        <div class="form-check mb-1">
+                                                                            <input class="form-check-input" type="checkbox" id="kolkata">
+                                                                            <label class="form-check-label small" for="kolkata">Kolkata</label>
+                                                                        </div>
+                                                                        <div class="form-check mb-1">
+                                                                            <input class="form-check-input" type="checkbox" id="hyderabad">
+                                                                            <label class="form-check-label small" for="hyderabad">Hyderabad</label> 
+                                                                        </div>
+                                                                        <div class="form-check mb-1">
+                                                                            <input class="form-check-input" type="checkbox" id="bangalore">
+                                                                            <label class="form-check-label small" for="bangalore">Bangalore</label> 
+                                                                        </div>
+                                                                        <div class="form-check mb-1">
+                                                                            <input class="form-check-input" type="checkbox" id="pune">
+                                                                            <label class="form-check-label small" for="pune">Pune</label>
+                                                                        </div>
+                                                                        <div class="form-check mb-1">
+                                                                            <input class="form-check-input" type="checkbox" id="ahmedabad">
+                                                                            <label class="form-check-label small" for="ahmedabad">Ahmedabad</label>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
-                                                                <div class="form-check mb-1">
-                                                                    <input class="form-check-input" type="checkbox" id="fashion">
-                                                                    <label class="form-check-label small" for="fashion">Fashion & Apparel</label>
-                                                                </div>
-                                                                <div class="form-check mb-1">
-                                                                    <input class="form-check-input" type="checkbox" id="automobile">
-                                                                    <label class="form-check-label small" for="automobile">Automobile</label>
-                                                                </div>
-                                                                <div class="form-check mb-1">
-                                                                    <input class="form-check-input" type="checkbox" id="beauty">
-                                                                    <label class="form-check-label small" for="beauty">Beauty & Salon</label>
-                                                                </div>
-                                                                <div class="form-check mb-1">
-                                                                    <input class="form-check-input" type="checkbox" id="fitness">
-                                                                    <label class="form-check-label small" for="fitness">Fitness</label>
-                                                                </div>
-                                                                <div class="form-check mb-1">
-                                                                    <input class="form-check-input" type="checkbox" id="other">
-                                                                    <label class="form-check-label small" for="other">Other</label>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- Industry -->
+                                                        <div class="card mb-2 p-3">
+                                                            <div class="card-header bg-white p-0 border-0 border-bottom-0" id="headingIndustry">
+                                                                <h2 class="mb-0 d-flex justify-content-between w-100 h-auto">
+                                                                    <button class="btn btn-link btn-block text-left px-0 collapsed" type="button" data-toggle="collapse" data-target="#collapseIndustry" aria-expanded="false" aria-controls="collapseIndustry">
+                                                                        Industry
+                                                                    </button>
+                                                                    <div class="collapse-icon">
+                                                                        <a href="#" data-toggle="collapse" data-target="#collapseIndustry" class="size-6"><i class="fa fa-chevron-down"></i></a>
+                                                                    </div>
+                                                                </h2>
+                                                            </div>
+                                                            <div id="collapseIndustry" class="collapse show" aria-labelledby="headingIndustry" data-parent="#filterAccordion">
+                                                                <div class="card-body px-0">
+                                                                    <div class="search-box mb-2">
+                                                                        <input type="text" class="form-control form-control-sm" placeholder="Find Industry">
+                                                                    </div>
+                                                                    <div class="checkbox-data">
+                                                                        <div class="form-check mb-1">
+                                                                            <input class="form-check-input" type="checkbox" id="it">
+                                                                            <label class="form-check-label small" for="it">IT & Tech</label>
+                                                                        </div>
+                                                                        <div class="form-check mb-1">
+                                                                            <input class="form-check-input" type="checkbox" id="fashion">
+                                                                            <label class="form-check-label small" for="fashion">Fashion & Apparel</label>
+                                                                        </div>
+                                                                        <div class="form-check mb-1">
+                                                                            <input class="form-check-input" type="checkbox" id="automobile">
+                                                                            <label class="form-check-label small" for="automobile">Automobile</label>
+                                                                        </div>
+                                                                        <div class="form-check mb-1">
+                                                                            <input class="form-check-input" type="checkbox" id="beauty">
+                                                                            <label class="form-check-label small" for="beauty">Beauty & Salon</label>
+                                                                        </div>
+                                                                        <div class="form-check mb-1">
+                                                                            <input class="form-check-input" type="checkbox" id="fitness">
+                                                                            <label class="form-check-label small" for="fitness">Fitness</label>
+                                                                        </div>
+                                                                        <div class="form-check mb-1">
+                                                                            <input class="form-check-input" type="checkbox" id="other">
+                                                                            <label class="form-check-label small" for="other">Other</label>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
 
-                                                        <hr>
-
-                                                        <div class="mb-3">
-                                                            <div class="filter-title mb-3" style="font-size:1rem;font-weight:600;">Investment Range</div>
-                                                            <div class="checkbox-data mt-2">
-                                                                <div class="form-check mb-1">
-                                                                    <input class="form-check-input" type="checkbox" id="inv1">
-                                                                    <label class="form-check-label small" for="inv1">Below ₹5 Lakhs</label>
-                                                                </div>
-                                                                <div class="form-check mb-1">
-                                                                    <input class="form-check-input" type="checkbox" id="inv2">
-                                                                    <label class="form-check-label small" for="inv2">₹5L - ₹10L</label>
-                                                                </div>
-                                                                <div class="form-check mb-1">
-                                                                    <input class="form-check-input" type="checkbox" id="inv3">
-                                                                    <label class="form-check-label small" for="inv3">₹10L - ₹20L</label>
-                                                                </div>
-                                                                <div class="form-check mb-1">
-                                                                    <input class="form-check-input" type="checkbox" id="inv4">
-                                                                    <label class="form-check-label small" for="inv4">₹20L - ₹50L</label>
-                                                                </div>
-                                                                <div class="form-check mb-1">
-                                                                    <input class="form-check-input" type="checkbox" id="inv5">
-                                                                    <label class="form-check-label small" for="inv5">Above ₹50 Lakhs</label>
+                                                        <!-- Investment Range -->
+                                                        <div class="card mb-2 p-3">
+                                                            <div class="card-header bg-white p-0 border-0 border-bottom-0" id="headingInvestment">
+                                                                <h2 class="mb-0 d-flex justify-content-between w-100 h-auto">
+                                                                    <button class="btn btn-link btn-block text-left px-0 collapsed" type="button" data-toggle="collapse" data-target="#collapseInvestment" aria-expanded="false" aria-controls="collapseInvestment">
+                                                                        Investment Range
+                                                                    </button>
+                                                                    <div class="collapse-icon">
+                                                                        <a href="#" data-toggle="collapse" data-target="#collapseInvestment" class="size-6"><i class="fa fa-chevron-down"></i></a>
+                                                                    </div>
+                                                                </h2>
+                                                            </div>
+                                                            <div id="collapseInvestment" class="collapse show" aria-labelledby="headingInvestment" data-parent="#filterAccordion">
+                                                                <div class="card-body px-0">
+                                                                    <div class="checkbox-data">
+                                                                        <div class="form-check mb-1">
+                                                                            <input class="form-check-input" type="checkbox" id="inv1">
+                                                                            <label class="form-check-label small" for="inv1">Below ₹5 Lakhs</label>
+                                                                        </div>
+                                                                        <div class="form-check mb-1">
+                                                                            <input class="form-check-input" type="checkbox" id="inv2">
+                                                                            <label class="form-check-label small" for="inv2">₹5L - ₹10L</label>
+                                                                        </div>
+                                                                        <div class="form-check mb-1">
+                                                                            <input class="form-check-input" type="checkbox" id="inv3">
+                                                                            <label class="form-check-label small" for="inv3">₹10L - ₹20L</label>
+                                                                        </div>
+                                                                        <div class="form-check mb-1">
+                                                                            <input class="form-check-input" type="checkbox" id="inv4">
+                                                                            <label class="form-check-label small" for="inv4">₹20L - ₹50L</label>
+                                                                        </div>
+                                                                        <div class="form-check mb-1">
+                                                                            <input class="form-check-input" type="checkbox" id="inv5">
+                                                                            <label class="form-check-label small" for="inv5">Above ₹50 Lakhs</label>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -344,7 +425,7 @@
                                                 <div class="our-directory">
                                                     <div class="sort shadow-sm p-3 mb-4">                
                                                         <div class="heading-formatting">
-                                                            <h6 class="text-dark text-uppercase mb-0">
+                                                            <h6 class="text-dark  mb-0">
                                                                 Top Franchise Opportunities in India 2025
                                                             </h6>
                                                         </div>
@@ -667,6 +748,8 @@
                                 </div>
                             </div>
                         </div>
+                    <!-- Blog Section End -->
+                </div>
             <!-- Main Section End -->
 
 

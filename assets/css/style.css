@@ -20086,7 +20086,7 @@ iframe {
 
 .header-style-04 .topbar .social-icon a:hover,
 .header-style-06 .topbar .social-icon a:hover {
-  color: #ff8d90;
+  color: #f5a220;
 }
 
 .header-style-04 .topbar .social-icon .icon,
@@ -20104,7 +20104,7 @@ iframe {
 
 .header-style-04 .topbar .dropdown-toggle:hover,
 .header-style-06 .topbar .dropdown-toggle:hover {
-  color: #ff8d90;
+  color: #f5a220;
 }
 
 .header-style-04 .navbar-nav>.nav-item>.nav-link,
@@ -20114,7 +20114,7 @@ iframe {
 
 .header-style-04 .header-customize-item:first-child a:hover,
 .header-style-06 .header-customize-item:first-child a:hover {
-  color: #ff8d90;
+  color: #f5a220;
 }
 
 @media (min-width: 992px) {
@@ -20200,7 +20200,7 @@ iframe {
   }
 
   .header-style-04 .nav-link:hover {
-    color: #ff8d90 !important;
+    color: #f5a220 !important;
   }
 
   .header-style-04 .navbar-collapse {
@@ -21876,7 +21876,7 @@ iframe {
 }
 
 .social-icon.origin-color .list-inline-item a:hover {
-  color: #ff8d90;
+  color: #f5a220;
 }
 
 .social-icon.si-xs {
@@ -22719,7 +22719,6 @@ iframe {
 }
 
 .accordion .card {
-  border-bottom: 1px solid #dee2e6 !important;
   border-radius: 0 !important;
 }
 
@@ -22794,7 +22793,7 @@ iframe {
 }
 
 .accordion .card-body {
-  padding: 25px 15px 25px 72px;
+  padding: 15px 15px 25px 72px;
 }
 
 .job-by {
@@ -23254,7 +23253,7 @@ iframe {
 }
 
 .breadcrumb.breadcrumb-style-02 .breadcrumb-item a:hover {
-  color: #ff8d90;
+  color: #f5a220;
 }
 
 .breadcrumb.breadcrumb-style-03 .breadcrumb-item {
@@ -23270,7 +23269,7 @@ iframe {
 }
 
 .breadcrumb.breadcrumb-style-03 .breadcrumb-item:first-child a:hover {
-  color: #ff8d90;
+  color: #f5a220;
 }
 
 .breadcrumb.breadcrumb-style-03 .breadcrumb-item:last-child {
@@ -27974,7 +27973,7 @@ button.mfp-arrow:active {
 }
 
 .max-w-7xl .info-side {
-  background: #ff5a5f;
+  background: #f5a220;
   /* Tailwind sky-500 */
   color: white;
   padding: 2.5rem 2rem 2rem;
@@ -28089,7 +28088,7 @@ button.mfp-arrow:active {
 .max-w-7xl input[type="text"]:focus,
 .max-w-7xl input[type="email"]:focus,
 .max-w-7xl textarea:focus {
-  border-bottom-color: #0284c7;
+  border-bottom-color: #f5a220;
   outline: none !important;
   /* sky-600 */
 }
@@ -28570,4 +28569,59 @@ button.mfp-arrow:active {
   color: #fff !important;
   background-color: #f5a220 !important;
   border-color: #f5a220 !important;
+}
+
+.filter-title {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .accordion .card {
+    border: none;
+  }
+
+  .accordion .btn-link {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .filter .size-6{
+    font-size: 12px !important;
+    color: #000 !important;
+  }
+    .filter .h-auto{
+      height: auto !important;
+      line-height: 25px;
+    }
+
+    .theme-text{
+      color: #f5a220 !important;
+    }
+
+    a.bg-white:hover{
+      background: white !important;
+    }
+
+       .post-style-1 a.text-dark.decoration-none{
+        font-size: 18px !important;
+    }
+
+    .other-informations .details a{
+color : #282828;
+}
+
+    .other-informations .heading h2,
+     .other-informations .heading h3,
+     .other-informations .heading h6{
+    font-size: 20px;
+    line-height: 25px;
+}   
+
+.form-box .title h4{
+    font-size: 20px !important;
 }
