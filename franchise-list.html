@@ -143,40 +143,43 @@
 						</div>
 					<!-- Breadcrumb End -->
 
+
+                    <!-- Filter Option Start -->
+                        <section class="filter-section bg-white border-bottom border-light p-3 d-block d-lg-none">
+                            <div class="container">
+                                <div class="d-flex justify-content-between text-center align-items-center">
+                                    <div class="filter-option">
+                                        <a class="text-dark p-2" onclick="openSidebar()">
+                                            <i class="fa fa-filter" aria-hidden="true"></i> Filter
+                                        </a>
+                                    </div>
+                                    <div class="sorting-option">
+                                        <a class="text-dark p-2">
+                                            <i class="fa fa-sort" aria-hidden="true"></i> Sorting
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    <!-- Filter Option End -->
+
                     
                     <!-- Blog Section Start -->
-                        <div class="pt-8 pb-8 border-bottom list-section">
+                        <div class="pt-0 pb-8 border-bottom list-section desktop-spacing">
                             <div class="container">
                                 <div class="page-container row">
-                                    <div class="page-content col-lg-12 mb-lg-0">
+                                    <div class="page-content mb-lg-0">
                                         <div class="row post-style-3">
-                                            <div class="col-lg-3 col-sm-4 col-12 mb-4">
-                                                <!-- Filter Option Start -->
-                                                    <section class="filter-section d-lg-none d-md-none d-sm-none d-block bg-white border-bottom border-light p-3">
-                                                        <div class="container">
-                                                            <div class="filter-box">
-                                                                <div class="box d-flex justify-content-between text-center align-items-center">
-                                                                    <div class="filter-option">
-                                                                        <a onclick="Openfilter()" class="text-dark p-3">
-                                                                            <i class="fa fa-filter" aria-hidden="true"></i> Filter
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="sorting-option">
-                                                                        <a class="text-dark p-3">
-                                                                            <i class="fa fa-sort" aria-hidden="true"></i> Sorting
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </section>
-                                                <!-- Filter Option End -->
-                                                <div class="filter shadow-sm rounded-3 bg-white">
+                                            <div class="col-lg-3 col-sm-4 col-12">
+                                                <div class="filter shadow-sm rounded-3 bg-white" id="mySidebar">
                                                     <div class="header d-flex flex-wrap align-items-center mb-3 border-bottom pb-3">
-                                                        <div class="title flex-grow-1 p-3">
+                                                        <div class="title flex-grow-1 d-flex align-items-center justify-content-between">
                                                             <h2 class="mb-0 h5 text-dark  filter-title">
                                                                 Franchise Filter
                                                             </h2>
+                                                            <button class="btn btn-light btn-sm d-lg-none d-sm-none d-block" onclick="closeSidebar()">
+                                                                <i class="fa fa-times"></i>
+                                                            </button>
                                                         </div>
                                                     </div>
 
@@ -421,9 +424,11 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            
+
                                             <div class="col-lg-9 col-sm-8 col-12">
-                                                <div class="our-directory">
-                                                    <div class="sort shadow-sm p-3 mb-4">                
+                                                <div class="our-directory pt-0 p-2">
+                                                    <div class="sort shadow-sm p-3 mb-2">                
                                                         <div class="heading-formatting">
                                                             <h6 class="text-dark  mb-0">
                                                                 Top Franchise Opportunities in India 2025
@@ -807,8 +812,10 @@
         <script src="assets/js/jquery.magnific-popup.js"></script>
         <script src="assets/js/slick.js"></script>
         <script src="assets/js/jquery.waypoints.js"></script>
+        <script src="assets/js/script.js"></script>
 
         <!-- Site Javascript -->
         <script src="assets/js/app.js"></script>
+
     </body>
 </html>
